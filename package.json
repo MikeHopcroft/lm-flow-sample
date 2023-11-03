@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "dedent": "^1.5.1",
-    "lm-flow": "^0.0.5"
+    "lm-flow": "^0.0.6"
   },
   "peerDependencies": {
     "zod": "^3.22.4"
