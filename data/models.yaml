@@ -1,0 +1,44 @@
+# - type: function
+#   name: f1
+- type: mock
+  name: model1
+  config:
+    exactMatch: false
+    defaultResponse: "I don't understand"
+    cache:
+      - prompt: hello, world
+        completion: '2'
+      - prompt: hello
+        completion: '1'
+- type: mock
+  name: model2
+  config:
+    exactMatch: false
+    defaultResponse: "I don't understand"
+    cache:
+      - prompt: '0'
+        completion: 'goodbye'
+      - prompt: '1'
+        completion: 'hello'
+      - prompt: '2'
+        completion: 'hello hello'
+- type: azure
+  name: azure-3.5
+  config:
+    max_tokens: 3000
+- type: openai
+  name: openai-3.5
+  config:
+    model: gpt-3.5
+    max_tokens: 3000
+- type: openai
+  name: openai-3.5-turbo-16k
+  config:
+    model: gpt-3.5-turbo-16k
+    max_tokens: 3000
+- type: openai
+  name: openai-4
+  config:
+    model: gpt-4
+    max_tokens: 3000
+    
